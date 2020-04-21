@@ -1,0 +1,231 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Register Form</title>
+ <style>
+  *{
+   margin:0;
+   padding:0;
+   font-family:Century Gothic;
+  }
+
+  ul{
+   float:right;
+   list-style-type:none;
+   margin-top:2.2em;
+   margin-right:4.5em;
+  }
+
+  ul li{
+   display:inline-block;
+  }
+
+  ul li a{
+   text-decoration: none;
+   color:#fff;
+   padding:5px 20px;
+   border:1px solid transparent;
+   transition:0.6s ease;
+  }
+
+  ul li a:hover{
+   background-color:#fff;
+   color:#000;
+  }
+
+  ul li.active a{
+   background-color: #fff;
+   color:#000;
+  }
+
+  .logo img{
+   float:left;
+   width:8em;
+   height:auto;
+   margin-top:-1em;
+   padding:0.2em;
+  }
+
+  header{
+   background-image:url(2.jpg);
+   background-size:100% 100%;
+   height:100vh;
+   background-position: center;
+  }
+
+  /* .loginBox{
+      position: absolute;
+      top:50%;
+      left:50%;
+      transform: translate(-50%,-50%);
+      width:70%;
+      height:70%;
+      padding:80px 40px;
+      box-sizing: border-box;
+      background:rgba(0, 0, 0, 0.5);
+  } */
+
+  .loginBox h2{
+   /*padding:0 0 10px;*/
+   color: #924a08;
+   text-align: center;
+
+  }
+
+  .div1{
+   margin-top: 300px;
+   text-align: center;
+  }
+  .div1 label{
+   font-size: 30px;
+   color: #fcfcfc;
+
+  }
+
+
+  .loginBox input[type="submit"]:hover{
+   background:#66f9cf;
+   color:#ffffff;
+  }
+
+
+  footer{
+   background:rgb(209,209,211);
+   text-align: center;
+   position: absolute;
+   width:100%;
+   height:auto;
+   margin-top:1.5%;
+  }
+
+  .foot{
+   float:left;
+   width:25%;
+   margin-top:1.5em;
+  }
+
+  .log img{
+   float:right;
+   width:8em;
+   height:auto;
+  }
+
+  .foot h2{
+   font-size: 1.2em;
+  }
+
+  .foot p{
+   font-size:0.8em;
+   margin-top:1em;
+  }
+
+  .right{
+   float:left;
+   width:100%;
+   margin-top:1.2em;
+  }
+
+  .right p{
+   font-size:0.6em;
+  }
+
+  .online a{
+   text-decoration: none;
+   color:#000;
+  }
+
+  .about a{
+   text-decoration: none;
+   color:#000;
+  }
+
+  .online a:hover{
+   color:grey;
+  }
+
+  .about a:hover{
+   color:grey;
+  }
+ </style>
+
+
+</head>
+<body>
+ <form action="insert.php" method="POST">
+  <header>
+   <div class="main">
+    <div class="logo">
+     <img src="logo1.png" alt="A Cafe">
+    </div>
+    <ul>
+     <li><a href="index.html">Home</a></li>
+     <li><a href="about.html">About Us</a></li>
+     <li><a href="menu.html">Menu</a></li>
+     <li class="active"><a href="sign.html">Sign Up</a></li>
+    </ul>
+   </div>
+
+   <form class="loginBox" action="insert.php" method="POST">
+    <h2>SIGN UP</h2>
+    <div class="div1">
+     <label for="name"><strong>Name:</strong></label>
+     <input type="text" name="username" required>
+     <br>
+     <label><strong>Password:</strong></label>
+     <input type="password" name="password" required>
+     <br>
+     <label><strong>Gender:</strong></label>
+     <input type="radio" name="gender" value="m" required><span style="color: white">Male</span>
+     <input type="radio" name="gender" value="f" required><span style="color: white">Female</span>
+     <br>
+     <label><strong>Email:</strong></label>
+     <input type="email" name="email" required>
+     <br>
+     <label><strong>Phone NO:</strong></label>
+     <select name="phoneCode" required>
+      <option selected hidden value="">Select Code</option>
+      <option value="977">65</option>
+      <option value="978">86</option>
+      <option value="979">36</option>
+      <option value="973">76</option>
+      <option value="972">12</option>
+      <option value="974">01</option>
+     </select>
+     <input type="phone" name="phone" requied>
+     <br>
+     <input type="submit" value="Submit"></div>
+   </form>
+  </header>
+
+  <footer>
+   <div class="row">
+    <div class="foot">
+     <div class="about">
+      <h2>ABOUT US</h2>
+      <p><a href="about.html">A Cafe Singapore</a></p>
+     </div>
+    </div>
+    <div class="foot">
+     <div class="online">
+      <h2>ONLINE COMMUNITY</h2>
+      <p><a href="http://www.facebook.com" target="_blank">Facebook</a></p>
+      <p><a href="http://www.instagram.com" target="_blank">Instagram</a></p>
+     </div>
+    </div>
+    <div class="foot">
+     <div class="contact">
+      <h2>CONTACT US</h2>
+      <p>Contacts: 0455 5555 555</p>
+      <p>Address: 18 Lorong 7 Geylang #09-12 Singapore</p>
+     </div>
+    </div>
+   </div>
+   <div class="log">
+    <img src="logo1.png" alt="logo">
+   </div>
+   <div class="right">
+    <p>&copy;2019 A Cafe. All right Reserved</p>
+   </div>
+  </footer>
+</body>
+</html>

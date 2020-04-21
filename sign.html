@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="sign.css">
+</head>
+<body>
+    <header>
+        <div class="main">
+            <div class="logo">
+                <img src="logo1.png" alt="A Cafe">
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li class="active"><a href="sign.html">Sign Up</a></li>
+            </ul>
+        </div>
+        <!-- <div class="loginBox">
+            <h2>SIGN UP</h2>
+            <form>
+                <p>Email</p>
+                <input type="text" name="" placeholder="Enter Email">
+                <p>Password</p>
+                <input type="password" name="" placeholder="******">
+                <input type="submit" name="" value="Sign Up">
+
+            </form>
+        </div> -->
+    <!-- </header> -->
+    <!-- <form class="loginBox" name="myForm" action="action_page.php" onsubmit="return validateForm()" method="post"> -->
+
+<form class="loginBox" action="insert.php" method="POST">
+    <h2>SIGN UP</h2>
+<div class="div1">
+    <label for="name"><strong>Name:</strong></label>
+    <input type="text" name="username" required>
+    <br>
+    <label><strong>Password:</strong></label>
+    <input type="password" name="password" required>
+    <br>
+    <label><strong>Gender:</strong></label>
+    <input type="radio" name="gender" value="m" required><span style="color: white">Male</span>
+    <input type="radio" name="gender" value="f" required><span style="color: white">Female</span>
+    <br>
+    <label><strong>Email:</strong></label>
+    <input type="email" name="email" required>
+    <br>
+    <label><strong>Phone NO:</strong></label>
+    <select name="phoneCode" required>
+        <option selected hidden value="">Select Code</option>
+        <option value="977">977</option>
+        <option value="978">978</option>
+        <option value="979">979</option>
+        <option value="973">973</option>
+        <option value="972">972</option>
+        <option value="974">974</option>
+    </select>
+    <input type="phone" name="phone" requied>
+    <br>
+    <input type="submit" value="Submit"></div>
+    </form>
+
+    <!-- <table>
+        <tr>
+            <td>Name :</td>
+            <td><input type="text" name="username" required></td>
+        </tr>
+        <tr>
+            <td>Password :</td>
+            <td><input type="password" name="password" required></td>
+        </tr>
+        <tr>
+            <td>Gender :</td>
+            <td>
+                <input type="radio" name="gender" value="m" required>Male
+                <input type="radio" name="gender" value="f" required>Female
+            </td>
+        </tr>
+        <tr>
+            <td>Email :</td>
+            <td><input type="email" name="email" required></td>
+        </tr>
+        <tr>
+            <td>Phone no :</td>
+            <td>
+                <select name="phoneCode" required>
+                    <option selected hidden value="">Select Code</option>
+                    <option value="977">977</option>
+                    <option value="978">978</option>
+                    <option value="979">979</option>
+                    <option value="973">973</option>
+                    <option value="972">972</option>
+                    <option value="974">974</option>
+                </select>
+                <input type="phone" name="phone" required>
+            </td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="Submit"></td>
+        </tr>
+    </table>
+</form> -->
+
+
+</header>
+
+    <footer>
+        <div class="row">
+            <div class="foot">
+                <div class="about">
+                    <h2>ABOUT US</h2>
+                    <p><a href="about.html">A Cafe Singapore</a></p>
+                </div>
+            </div>
+            <div class="foot">
+                <div class="online">
+                    <h2>ONLINE COMMUNITY</h2>
+                    <p><a href="http://www.facebook.com" target="_blank">Facebook</a></p>
+                    <p><a href="http://www.instagram.com" target="_blank">Instagram</a></p>
+                </div>
+            </div>
+            <div class="foot">
+                <div class="contact">
+                    <h2>CONTACT US</h2>
+                    <p>Contacts: 0455 5555 555</p>
+                    <p>Address: 18 Lorong 7 Geylang #09-12 Singapore</p>
+                </div>
+            </div>
+        </div>
+        <div class="log">
+            <img src="logo1.png" alt="logo">
+        </div>
+        <div class="right">
+            <p>&copy;2019 A Cafe. All right Reserved</p>
+        </div>
+    </footer>
+</body>
+</html>
